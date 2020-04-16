@@ -20,6 +20,6 @@ The `forex` package contains a sample service that sums several amounts in diffe
 
 The results are not very useful because they may vary in different machines, so the purpose of the JUnit 5 tests is to validate the results. There are three tests:
 1) the first test just check if the average time of execution is below a specific threshold
-2) the second test check the time complexity in O(n); in details it validates that time(10*n) <= 10*time(n) using an error of 0.2
+2) the second test check the time complexity in O(n); in details it validates that time(10&ast;n) <= 10&ast;time(n) using an error of 0.2
 3) the last test compare the results of the code with the other implementation
 
