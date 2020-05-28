@@ -132,7 +132,7 @@ public class ForexCalculatorBenchmark {
     }
 
     /*
-Using VM version: JDK 1.8.0_221 on LENOVO ThinkPad T460 with i5-6300U CPU @ 2.40GHz
+Using VM version: JDK 1.8.0_221 on HP Omen with i7-8750H CPU @ 2.20GHz
 Benchmark                                         (amountSize)  Mode  Cnt     Score     Error  Units
 ForexCalculatorBenchmark.onCurrentImplementation           100  avgt   10     6,456 ±   0,386  us/op
 ForexCalculatorBenchmark.onCurrentImplementation          1000  avgt   10    41,121 ±   8,822  us/op
