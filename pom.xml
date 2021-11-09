@@ -9,10 +9,6 @@
 
     <name>JMH Performance test</name>
 
-    <prerequisites>
-        <maven>3.0</maven>
-    </prerequisites>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jmh.version>1.32</jmh.version>
@@ -60,6 +56,12 @@
             <artifactId>jmh-generator-annprocess</artifactId>
             <version>${jmh.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>commons-math3</artifactId>
+                    <groupId>org.apache.commons</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -69,8 +71,8 @@
         </dependency>
     </dependencies>
 
-<!--    <build>-->
-<!--        <plugins>-->
+    <build>
+        <plugins>
 <!--            <plugin>-->
 <!--                <groupId>org.apache.maven.plugins</groupId>-->
 <!--                <artifactId>maven-compiler-plugin</artifactId>-->
@@ -92,7 +94,7 @@
 <!--                    </execution>-->
 <!--                </executions>-->
 <!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
+        </plugins>
+    </build>
 
 </project>
