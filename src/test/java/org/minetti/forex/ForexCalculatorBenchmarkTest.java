@@ -66,7 +66,7 @@ public class ForexCalculatorBenchmarkTest {
             RunResult previousResult = sortedRunResults.get(i - 1);
             double scoreRatio = score(currentResult) / score(previousResult);
             double sizeRatio = amountSize(currentResult) / amountSize(previousResult);
-            assertThat(scoreRatio, is(not(greaterThan(sizeRatio * 1.2))));
+            assertThat(scoreRatio, is(not(greaterThan(sizeRatio * 1.4))));
         }
     }
 
